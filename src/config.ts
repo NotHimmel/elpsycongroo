@@ -1,18 +1,18 @@
 import type { PostHideElements } from '~/content/config';
 
-export const Site = 'https://astro-blog-zozo.pages.dev';
+export const Site = 'https://timeleapmachine.com';
 export const SiteLanguage = 'zh';
-export const SiteTitle = '无尽光芒';
-export const SiteDescription = '踏歌长行，梦想永在';
-export const FooterDescription = '肆意闪耀';
-export const AdminName = 'Ladit';
+export const SiteTitle = '漂流少年';
+export const SiteDescription = '拉布塔尼的鹦鹉会笑';
+export const FooterDescription = 'El Psy Kongroo';
+export const AdminName = 'NotHimmel';
 export const PageSize = 15;
 
 // socialPlatform => userName
 // check components/Header.astro socialConfig for more info
 export const Socials: Record<string, Record<string, string>> = {
-	mail: { url: 'mailto:i@ladit.me' },
-	github: { url: 'https://github.com/ladit/astro-blog-zozo' },
+	mail: { url: '' },
+	github: { url: 'https://github.com/nothimmel' },
 	x: { url: 'https://x.com/userName' },
 	mastodon: { url: 'https://mastodon.social/@userName' },
 	facebook: { url: 'https://facebook.com/userName' },
