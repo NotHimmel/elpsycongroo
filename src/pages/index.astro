@@ -1,6 +1,8 @@
 ---
 import { Picture } from 'astro:assets';
-import img from '~/assets/undraw_dog_c7i6.svg';
+const img = "https://img.whocare.space:17217/i/2024/06/04/212717.webp"
+const imgWidth = 800;
+const imgHeight = 600;
 import { SiteDescription, SiteTitle } from '~/config';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 ---
@@ -12,10 +14,17 @@ import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 	currentNav="Home"
 >
 	<div class="flex flex-col items-center gap-4 xl:flex-row">
-		<Picture class="lg:max-w-md" src={img} formats={['avif', 'webp']} alt="a dog" loading="eager" />
+		<Picture class="lg:max-w-md" src={img} width={imgWidth} height={imgHeight} formats={['avif', 'webp']} alt="a dog" loading="eager" />
 		<div>
-			<h1>施工中</h1>
-			
+			<h1>Hello there! I am NotHimmel</h1>
+			<p>
+				El psy kongroo
+			</p>
+			<ul class="list-disc">
+				<li>
+					施工中
+				</li>
+			</ul>
 		</div>
 	</div>
 </MarkdownLayout>
