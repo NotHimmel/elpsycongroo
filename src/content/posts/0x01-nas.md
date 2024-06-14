@@ -24,3 +24,4 @@ tags:
 | **nginxwebui**       | cym1102/nginxwebui:latest |           /home/nginxWebUI |
 | **freshRSS**       | linuxserver/freshrss:latest |           /config |
 | anki       | yangchuansheng/anki-sync-server:latest |           /data |
+| codeserver | linuxserver/code-server:latest | /config |
