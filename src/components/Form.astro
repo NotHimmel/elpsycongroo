@@ -3,12 +3,13 @@ let slug = Astro.url.pathname.replace(/^\/|\/$/g, "");
 ---
 
 <form
-  action="https://qiao.xinshijiededa.men/api/handle/form"
+  action="https://comment-worker.oceanustz.workers.dev/api/handle/form"
   method="post"
   class="comment-form"
+  hidden
 >
   <div class="form-group">
-    <label for="fields[name]">昵称 *</label>
+    <label for="fields[name]">NickName *</label>
     <input type="text" name="fields[name]" placeholder="NoName" required />
   </div>
 
@@ -17,7 +18,7 @@ let slug = Astro.url.pathname.replace(/^\/|\/$/g, "");
     <input
       type="text"
       name="fields[email]"
-      placeholder="不会公开显示"
+      placeholder="NoEmail"
       required
     />
   </div>
@@ -28,7 +29,7 @@ let slug = Astro.url.pathname.replace(/^\/|\/$/g, "");
       name="fields[message]"
       id="message"
       rows="6"
-      placeholder="El Psy Kongroo\n\n(不支持 Markdown)"
+      placeholder="NoMessage\n(不支持 Markdown)"
       required></textarea>
   </div>
 
