@@ -62,13 +62,13 @@ const manageScript = () => {
 
 export function Remark42() {
   // State for tracking the current theme.
-  const [theme, setTheme] = useState('light')
+  //const [theme, setTheme] = useState('light')
 
   // Use effect to manage the Remark42 script.
   useEffect(manageScript, [])
 
-  // Use effect to update the theme when it changes.
-  /*useEffect(() => {
+  /* Use effect to update the theme when it changes.
+  useEffect(() => {
     if (window.REMARK42) {
       window.REMARK42.changeTheme(theme)
     }
@@ -81,7 +81,7 @@ export function Remark42() {
 
   return (
     <>
-      <div id="remark42"></div>
+      <div id="remark42"/>
     </>
   )
 }
