@@ -41,8 +41,8 @@ const insertScript = (id: string, parentElement: HTMLElement) => {
       host: "${host}",
       site_id: "remark",
       url: "${url}",
-      theme: "dark",
-      components: ["counter", "embed"],
+      theme: "light",
+      components: ["last-comments", "embed"],
     };
     !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`
 
@@ -92,6 +92,7 @@ export function Remark42() {
 
   return (
     <>
+    <div style={{ height: '20px' }}/>
       <div id="remark42"/>
     </>
   )

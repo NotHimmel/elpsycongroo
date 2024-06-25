@@ -13,6 +13,9 @@ tags:
 ---
 
 # Tables
+flyctl vol create remark42_data -s 1 -r nrt
+
+flyctl ssh console
 
 ```markdown
 | Colors     |     Fruits      |         Vegetable |
