@@ -1,10 +1,21 @@
-import {useEffect, useState} from 'preact/hooks'
+import {useEffect} from 'preact/hooks'
+interface Remark {
+  changeTheme: (theme: string) => void;
+}
+
+interface RemarkConfig {
+  host: string;
+  site_id: string;
+  url: string;
+  theme: string;
+  components: string[];
+}
 
 declare global {
   // Declare the global types for REMARK42 and remark_config so they can be used in this module.
   interface Window {
-    REMARK42: any
-    remark_config: any
+    REMARK42: Remark;
+    remark_config: RemarkConfig;
   }
 }
 
