@@ -24,6 +24,7 @@ import { Site } from './src/config';
 import { getMarkdownEntries } from './src/utils/post';
 import { remarkPostTime, remarkReadingTime } from './src/utils/remark';
 import { transformerEnhanser } from './src/utils/shiki';
+import preact from '@astrojs/preact';
 
 const excludeSitemapFiles = (await getMarkdownEntries()).filter(
 	(entry) => entry.file.data.hidden,
@@ -36,6 +37,7 @@ export default defineConfig({
 		format: 'file',
 	},
 	integrations: [
+		preact(),
 		tailwind({
 			applyBaseStyles: false,
 		}),

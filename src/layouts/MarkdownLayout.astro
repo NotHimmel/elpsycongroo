@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { Icon } from 'astro-icon/components';
-import Comments from '~/components/Comments.astro';
+import {Remark42} from '~/components/Remark42';
 import { Hide, type HideElements } from '~/config';
 import type { PostHideElements } from '~/content/config';
 import ScaffoldLayout from './ScaffoldLayout.astro';
@@ -101,14 +101,7 @@ const showTimes = showDate || showLastmod || showReadingTime;
 	>
 		<slot />
 	</article>
-	{
-		show('comments') && (
-			<>
-				<hr class="mx-auto my-4 h-1 w-48 rounded border-0 bg-zinc-200 md:my-10 dark:bg-zinc-700" />
-				<Comments />
-			</>
-		)
-	}
+	<Remark42 client:visible/>
 </ScaffoldLayout>
 <script is:inline type="module">
 	const copy = async (copyButton) => {
